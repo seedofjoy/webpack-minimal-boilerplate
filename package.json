@@ -22,6 +22,8 @@
     "webpack": "^1.13.3"
   },
   "scripts": {
-    "update-eslint": "npm info 'eslint-config-airbnb@latest' peerDependencies --json | command sed 's/[\\{\\},]//g ; s/: /@/g' | xargs yarn add --dev 'eslint-config-airbnb@latest'"
+    "watch": "webpack --progress -w",
+    "eslint-fix": "eslint ./app --fix; exit 0",
+    "eslint-update": "npm info 'eslint-config-airbnb@latest' peerDependencies --json | command sed 's/[\\{\\},]//g ; s/: /@/g' | xargs yarn add --dev 'eslint-config-airbnb@latest'"
   }
 }
