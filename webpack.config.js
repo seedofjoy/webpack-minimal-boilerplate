@@ -5,10 +5,13 @@ module.exports = {
     path: __dirname + "/build",
     filename: "[name].bundle.js"
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-      { test: /\.js$/, exclude: /node_modules/, loader: "eslint-loader", enforce: "pre" }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: "eslint-loader", enforce: "pre" }
     ]
   }
 };
