@@ -3,7 +3,8 @@ module.exports = {
   entry: "./main.js",
   output: {
     path: __dirname + "/build",
-    filename: "[name].bundle.js"
+    filename: "[name].bundle.js",
+    publicPath: '/build'
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
