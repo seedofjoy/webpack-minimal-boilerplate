@@ -11,6 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
     "babel-loader": "^6.2.7",
     "babel-preset-es2015": "^6.18.0",
     "eslint": "^3.9.1",
@@ -23,8 +24,9 @@
     "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
+    "start": "webpack-dev-server",
     "watch": "webpack --progress -w",
-    "eslint-fix": "eslint ./app --fix; exit 0",
+    "eslint-fix": "eslint --ext js --ext jsx app/** --fix; exit 0",
     "eslint-update": "npm info 'eslint-config-airbnb@latest' peerDependencies --json | command sed 's/[\\{\\},]//g ; s/: /@/g' | xargs yarn add --dev 'eslint-config-airbnb@latest'"
   }
 }
