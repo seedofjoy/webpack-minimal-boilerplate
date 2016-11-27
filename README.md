@@ -16,5 +16,12 @@ This is a minimalistic boilerplate for Webpack projects with Airbnb eslint confi
 
 `$ yarn run eslint-update` - Updates Airbnb ESLint config with all dependencies
 
+## Babel
+### Presets
+- es2015
+
+### Plugins
+- transform-object-rest-spread
+
 ## License
 MIT
