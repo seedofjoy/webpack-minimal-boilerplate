@@ -4,6 +4,7 @@ This is a minimalistic boilerplate for Webpack projects with Airbnb eslint confi
 ## Features
 - Yarn
 - Webpack
+- Jest
 - Babel 6 with ES2015 preset
 - ESLint with Airbnb config
 
@@ -11,6 +12,8 @@ This is a minimalistic boilerplate for Webpack projects with Airbnb eslint confi
 `$ yarn start` - Run Webpack Dev Server
 
 `$ yarn watch` - Run Webpack watcher
+
+`$ yarn test` - Run tests
 
 `$ yarn eslint-fix` - Run ESLint autofix. It try to fix as many issues as possible
 
